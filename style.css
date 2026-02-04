@@ -1,7 +1,20 @@
+@keyframes banner {
+    0% {
+        background-image: url('images/Burger1_upscayl_1x_digital-art-4x.png')
+    }
+    50% {
+        background-image: url('images/2026-02-04_16-03_upscayl_1x_digital-art-4x.png');
+    }
+    100% {
+        background-image: url('images/2026-02-04_16-04_upscayl_1x_digital-art-4x.png');
+    }
+}
+
 body {
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -25,18 +38,28 @@ ul li a {
 ul li a:hover {
     background-color: #111;
 }
-header{
+
+header {
     display: flex;
     flex-direction: inline;
     text-align: center;
 }
-nav{
+
+nav {
     width: 100%;
 }
-#titulo{
+
+#titulo {
     font-size: large;
     background-color: #333;
     color: white;
     padding: 10px;
     margin: 0;
+}
+
+.banner {
+    /* animation: banner 15s infinite; */
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
