@@ -1,4 +1,4 @@
-const btnInfo = document.querySelector(".info");
+const btnInfo = document.querySelector(".card");
 const telaDeInfos = document.querySelector(".telaDeInformacoes");
 
 telaDeInfos.style.visibility = "hidden";

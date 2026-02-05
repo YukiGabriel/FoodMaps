@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #525252
+    background-image: url(../../images/v642-nap-37-fastfood.jpg);
 }
 
 ul {
@@ -28,55 +28,45 @@ ul li a:hover {
     background-color: #111;
 }
 
-#produtos-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-#produtos-container p {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-
-}
-
-.produtos {
-    background: #3a3a3a;
-    border: 1px solid #4a4a4a;
-    border-radius: 10px;
-    padding: 15px;
-    width: calc(20% - 200px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: whitesmoke;
-}
-
-.produtos img {
-    width: 100%;
-    border-radius: 10px;
-}
-
 footer {
     display: flex;
     justify-content: center;
     color: white;
 }
+
 .telaDeInformacoes {
+    z-index: 50;
     text-align: center;
     color: white;
     visibility: visible;
     width: 20%;
     height: 100vh;
-    background-color: darkslategray;
+    background: #333;
     position: fixed;
-    top: 45px;
+    top: 0;
     right: 0;
     border-left: 3px solid #333;
 }
-.imagem{
-    width: 300px;
+
+.imagem {
+    width: 250px;
+    align-items: center;
 }
-.info{
-    background: none;
+
+.card {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    align-items: center;
+    background: #ffa600;
+    border: 1px solid #4a4a4a;
+    border-radius: 10px;
+    padding: 7px 7px 15px 7px;
+    width: calc(20%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.imagem img {
+    width: 100%;
 }

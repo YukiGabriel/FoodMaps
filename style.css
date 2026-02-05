@@ -82,10 +82,12 @@ footer {
     background: #ff9100;
     font-size: 0.9rem;
     color: black;
+
 }
 
-footer {
+footer a {
     text-decoration: none;
+    color: black;
 }
 
 #produtos-container {
@@ -99,7 +101,7 @@ footer {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    
+
 }
 
 .produtos {
@@ -116,6 +118,7 @@ footer {
     width: 100%;
     border-radius: 10px;
 }
+
 /*========================================================================*/
 
 #produtos-container {
@@ -129,7 +132,7 @@ footer {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    
+
 }
 
 .produtos {
