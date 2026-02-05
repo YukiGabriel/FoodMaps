@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt BR">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,9 +10,10 @@
     <title>FoodMaps</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-         <p id="titulo">FoodMaps</p>
+        <p id="titulo">FoodMaps</p>
         <nav>
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
@@ -21,17 +23,78 @@
                 <li><a href="sessions/navbar/bebidas.html">Bebidas</a></li>
                 <li><a href="sessions/navbar/sobremesas.html">Sobremesas</a></li>
             </ul>
-           
+
         </nav>
     </header>
     <main>
         <section>
             <div class="banner">
-                <img src="images/Burger1_upscayl_1x_digital-art-4x.png" alt="Banner FoodMaps">
+                <img id="slideshow" src="images/Burger1_upscayl_1x_digital-art-4x.png" alt="Hambúrguer">
             </div>
+        </section>
+
+        <section>
+
+            <div id="produtos-container">
+
+                <div class="produtos" id="produto1">
+                    <p>Hambúrguer1</p>
+                    <img src="images/Hamburger1.jpg" alt="">
+                    <p>R$ 50,00</p>
+                </div>
+
+                <div class="produtos" id="produto2">
+                    <p>Hambúrguer2</p>
+                    <img src="images/Hamburger2.jpg" alt="">
+                    <p>R$ 50,00</p>
+                </div>
+
+                <div class="produtos" id="produto4">
+                    <p>Hambúrguer3</p>
+                    <img src="images/Hamburger3.jpg" alt="">
+                    <p>R$ 50,00</p>
+                </div>
+
+                <div class="produtos" id="produto5">
+                    <p>Hambúrguer3</p>
+                    <img src="images/Hamburger3.jpg" alt="">
+                    <p>R$ 50,00</p>
+                </div>
+
+                <div class="produtos" id="produto6">
+                    <p>Hambúrguer3</p>
+                    <img src="images/Hamburger3.jpg" alt="">
+                    <p>R$ 50,00</p>
+                </div>
+
+            </div>
+
         </section>
     </main>
 
-    <footer>&copy 2026 FoodMaps ׀ <a href="#">Sobre</a></footer>
+    <script>
+        const images = [
+            "images/Burger1_upscayl_1x_digital-art-4x.png",
+            "images/2026-02-04_16-03_upscayl_1x_digital-art-4x.png",
+            "images/2026-02-04_16-04_upscayl_1x_digital-art-4x.png"
+        ];
+
+        let index = 0;
+        const slideshow = document.getElementById("slideshow");
+
+        setInterval(() => {
+            index = (index + 1) % images.length;
+            slideshow.style.opacity = 0;
+
+            setTimeout(() => {
+                slideshow.src = images[index];
+                slideshow.style.opacity = 1;
+            }, 300);
+        }, 3000);
+    </script>
+
+
+    <footer>&copy 2026 FoodMaps ׀ <a href="sessions/sobre.html">Sobre</a></footer>
 </body>
+
 </html>

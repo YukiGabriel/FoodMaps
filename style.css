@@ -1,18 +1,22 @@
-@keyframes banner {
+/* @keyframes banner {
     0% {
         background-image: url('images/Burger1_upscayl_1x_digital-art-4x.png')
     }
+
     50% {
         background-image: url('images/2026-02-04_16-03_upscayl_1x_digital-art-4x.png');
     }
+
     100% {
         background-image: url('images/2026-02-04_16-04_upscayl_1x_digital-art-4x.png');
     }
-}
+} */
 
 body {
     margin: 0;
     padding: 0;
+    /* background-color: #525252; */
+    background-image: url(./images/v642-nap-37-fastfood.jpg);
 }
 
 ul {
@@ -20,7 +24,7 @@ ul {
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #ff9100;
 }
 
 ul li {
@@ -29,14 +33,14 @@ ul li {
 
 ul li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 ul li a:hover {
-    background-color: #111;
+    background-color: #ffc400;
 }
 
 header {
@@ -51,19 +55,65 @@ nav {
 
 #titulo {
     font-size: large;
-    background-color: #333;
-    color: white;
+    background-color: #ff9100;
+    color: black;
     padding: 10px;
     margin: 0;
 }
 
 .banner {
-    /* animation: banner 15s infinite; */
-    height: 800px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
 }
-footer{
+
+.banner img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+footer {
     text-align: center;
+    padding: 15px;
+    background: #ff9100;
+    font-size: 0.9rem;
+    color: black;
 }
+
+footer {
+    text-decoration: none;
+}
+
+#produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+#produtos-container p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.produtos {
+    background: #ffa600;
+    border: 1px solid #4a4a4a;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(18% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.produtos img {
+    width: 100%;
+    border-radius: 10px;
+}
+/*========================================================================*/
