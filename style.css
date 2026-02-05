@@ -59,7 +59,11 @@ nav {
 
 .banner {
     /* animation: banner 15s infinite; */
-    height: 400px;
+    height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment:fixed ;
+}
+footer{
+    text-align: center;
 }
