@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #525252;
+    background-image: url(../images/v642-nap-37-fastfood.jpg);
 }
 
 ul {
@@ -9,7 +10,7 @@ ul {
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #ff9100;
 }
 
 ul li {
@@ -18,14 +19,14 @@ ul li {
 
 ul li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 ul li a:hover {
-    background-color: #111;
+    background-color: #ffc400;
 }
 
 header {
@@ -40,8 +41,8 @@ nav {
 
 #titulo {
     font-size: large;
-    background-color: #333;
-    color: white;
+    background-color: #ff9100;
+    color: black;
     padding: 10px;
     margin: 0;
 }
@@ -49,24 +50,19 @@ nav {
 footer {
     text-align: center;
     padding: 15px;
-    background: #333;
+    background: #ff9100;
     font-size: 0.9rem;
-    color: #aaa;
+    color: black;
 }
-
-footer {
-    text-decoration: none;
-}
-
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    color: whitesmoke;
+    color: black;
 }
 
 main h1 {
     padding: 15px;
-    background-color: dimgrey;
+    background-color: #ff9100;
 }
