@@ -1,12 +1,9 @@
-const btnInfo = document.querySelectorAll(".card");
-const telaDeInfos = document.querySelector(".telaDeInformacoes");
+const btn = document.querySelectorAll(".card");
+const overlay = document.querySelector(".telaDeInformacoes");
 
-telaDeInfos.style.visibility = "hidden";
 
-function informacoes() {
-    telaDeInfos.style.visibility = "visible";
-}
-
-btnInfo.forEach(card => {
-    card.addEventListener("click", informacoes);
+btn.forEach(botao => {
+    botao.addEventListener("click", () => {
+        overlay.style.display = "flex";
+    });
 });
