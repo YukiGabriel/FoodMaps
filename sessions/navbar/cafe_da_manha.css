@@ -66,12 +66,13 @@ footer a {
     text-align: center;
     color: white;
     width: 20%;
-    height: 100vh;
-    background: #333;
-    position: relative;
+    background: #ff9100;
     top: 0;
     right: 0;
-    border-left: 3px solid #333;
+}
+
+#overlay-conteudo {
+    padding: 20px;
 }
 
 .imagem {
@@ -100,4 +101,9 @@ footer a {
 
 .imagem img {
     width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: inline;
 }

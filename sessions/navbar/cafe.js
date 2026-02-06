@@ -7,3 +7,8 @@ btn.forEach(botao => {
         overlay.style.display = "flex";
     });
 });
+
+
+overlay.addEventListener("click", () => {
+    overlay.style.display = "none";
+});
