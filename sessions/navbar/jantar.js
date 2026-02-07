@@ -4,11 +4,11 @@ const overlay = document.querySelector(".telaDeInformacoes");
 
 btn.forEach(botao => {
     botao.addEventListener("click", () => {
-        overlay.style.display = "flex";
+        overlay.classList.add("ative")
     });
 });
-
-
-overlay.addEventListener("click", () => {
-    overlay.style.display = "none";
-});
+function close() {
+    overlay.classList.remove("ative")
+}
+overlay.addEventListener("click",close)
+ 
