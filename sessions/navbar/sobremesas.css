@@ -98,7 +98,7 @@ footer a {
     width: calc(25% - 60px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: black;
-    
+
 }
 
 .card:hover {
@@ -108,29 +108,52 @@ footer a {
 
 
 .imagem {
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  height: 190px;           
-  width: 100%;
-  overflow: hidden;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    width: 100%;
+    overflow: hidden;
 }
 
 
 .imagem img {
-  max-width: 90%;          
-  max-height: 90%;        
-  object-fit: contain;   
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
 }
 
 section {
     display: flex;
     flex-direction: inline;
 }
-h1{
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1 {
     width: fit-content;
-    margin: 15px auto;
     padding: 18px;
-    border-radius: 40%;
+    border-radius: 40% 0% 0% 40%;
     background-color: #ff9900;
+}
+.top input {
+    width: 15%;
+    height: fit-content;
+    padding: 29px;
+    border-radius: 0% 40% 40% 0%;
+    background-color: #ff9900;
+    border: none;
+}
+
+.top input::placeholder {
+    font-size: larger;
+    color: black;
+    position: fixed;
+    top: auto;
+    overflow: hidden;
+    transition: 0.3s ease;
 }
