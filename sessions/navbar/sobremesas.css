@@ -137,8 +137,8 @@ section {
 
 .top h1 {
     width: 30%;
-    padding: 18px;
-    border-radius: 40% 0% 0% 40%;
+    padding: 20px;
+    border-radius: 40% 5% 5% 40%;
     background-color: #ff9900;
     font-weight: bold;
 }
@@ -149,9 +149,10 @@ section {
     width: 30%;
     height: fit-content;
     padding: 29px;
-    border-radius: 0% 40% 40% 0%;
+    border-radius: 10% 40% 40% 10%;
     background-color: #ff9900;
     border: none;
+    font-size: 25px;
 }
 
 .top input::placeholder {
@@ -165,4 +166,8 @@ section {
     right: 50%;
     top: 30%;
     transition: 0.2s ease;
+}
+
+.top input:focus::placeholder {
+    right: 100%;
 }
