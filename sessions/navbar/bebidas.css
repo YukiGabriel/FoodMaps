@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    padding: 0;   
+    padding: 0;
+    background-image: url(../../images/bebidas.jpg);
+    background-size: cover;
 }
 
 ul {
@@ -8,7 +10,7 @@ ul {
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #ff9100;
 }
 
 ul li {
@@ -17,12 +19,106 @@ ul li {
 
 ul li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 ul li a:hover {
-    background-color: #111;
+    background-color: #ffc400;
+}
+
+header {
+    display: flex;
+    flex-direction: inline;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+}
+
+#titulo {
+    font-size: large;
+    background-color: #ff9100;
+    color: black;
+    padding: 10px;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ff9100;
+    font-size: 0.9rem;
+    color: black;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.telaDeInformacoes {
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    z-index: 50;
+    text-align: center;
+    color: black;
+    width: 20%;
+    background: #ff9100;
+    top: 0;
+    right: -20%;
+    transition: 0.3s ease;
+}
+
+.telaDeInformacoes.ative {
+    right: 0;
+}
+
+
+#overlay-conteudo {
+    padding: 20px;
+}
+
+.imagem {
+    width: 250px;
+    align-items: center;
+}
+
+.card {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    align-items: center;
+    background: rgb(255, 153, 0);
+    border: 1px solid #4a4a4a;
+    border-radius: 10px;
+    padding: 7px 7px 15px 7px;
+    width: calc(25% - 60px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.card:hover {
+    background: #ffb347;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.imagem img {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: inline;
+}
+h1{
+    width: fit-content;
+    margin: 15px auto;
+    padding: 18px;
+    border-radius: 40%;
+    background-color: #ff9900;
 }
