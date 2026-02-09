@@ -127,10 +127,46 @@ section {
     display: flex;
     flex-direction: inline;
 }
-h1{
-    width: fit-content;
-    margin: 15px auto;
-    padding: 18px;
-    border-radius: 40%;
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top h1 {
+    width: 30%;
+    padding: 20px;
+    border-radius: 40% 5% 5% 40%;
     background-color: #ff9900;
+    font-weight: bold;
+}
+
+.top input {
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: fit-content;
+    padding: 25px;
+    border-radius: 5% 40% 40% 5%;
+    background-color: #ff9900;
+    border: none;
+    font-size: 25px;
+}
+
+.top input::placeholder {
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    position: fixed;
+    right: 35%;
+    top: 30%;
+    transition: 0.2s ease;
+}
+
+.top input:focus::placeholder {
+    right: 100%;
 }

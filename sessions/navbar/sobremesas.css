@@ -148,8 +148,8 @@ section {
     justify-content: center;
     width: 30%;
     height: fit-content;
-    padding: 29px;
-    border-radius: 10% 40% 40% 10%;
+    padding: 25px;
+    border-radius: 5% 40% 40% 5%;
     background-color: #ff9900;
     border: none;
     font-size: 25px;
@@ -163,7 +163,7 @@ section {
     font-size: 25px;
     color: black;
     position: fixed;
-    right: 50%;
+    right: 35%;
     top: 30%;
     transition: 0.2s ease;
 }
